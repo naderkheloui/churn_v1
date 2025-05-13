@@ -11,7 +11,7 @@ COPY . /app
 # Installe les dépendances
 
 RUN pip install --upgrade pip
-RUN pip install -r requirements.tx
+RUN pip install -r requirements.txt
 
 # Expose le port sur lequel FastAPI tourne
 EXPOSE 8000
