@@ -1,0 +1,41 @@
+# Ce que fait ce pipeline :
+#
+#Il se déclenche sur chaque push ou pull request vers master/main
+#
+#Il installe Python 3.12 dans un environnement Ubuntu
+#
+#Il installe tes dépendances via requirements.txt
+#
+#Il lance tes tests avec pytest
+
+name: Python CI
+
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version:'3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirement.txt
+
+      - name: Run tests
+        run: |
+          pytest
+
