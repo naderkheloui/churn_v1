@@ -2,7 +2,7 @@
 
 from pydantic import BaseModel
 
-class InputData(BaseModel):
+class ChurnInput(BaseModel):
     Geolocalisation__Latitude__s: float
     Geolocalisation__Longitude__s: float
     pop_k1500m: float
