@@ -43,6 +43,6 @@ jobs:
       # 4. Étape de push de l'image vers DockerHub
       - name: Push Docker image to DockerHub
         run: |
-          docker push nadiroun/churn-app:latest
+          docker push nadiroun/churn_v1_app:latest
         # Cette étape pousse l'image Docker vers ton repository DockerHub (ici "nadiroun/churn-app").
         # Cela rend l'image accessible depuis DockerHub, prête à être utilisée dans un déploiement.
