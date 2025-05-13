@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 
-def load_model(path='ModelEntraine/model_0.pkl'):
+def load_model(path='ModelEntraine/model_1.pkl'):
     """
     charger le model sauvegardé
     """

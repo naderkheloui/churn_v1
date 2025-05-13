@@ -32,7 +32,7 @@ def train_and_save_model():
 
 
     # Sauvegarder le model
-    joblib.dump(pipeline, '../ModelEntraine/model_1.pkl')
+    joblib.dump(pipeline, '../../ModelEntraine/model_1.pkl')
 
 
 if __name__ == "__main__":

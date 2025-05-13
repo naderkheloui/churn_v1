@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from ML.predict import predict_churn
+from DEV.DataPrep.predict import predict_churn
 
 
 #creer une instance de l API
