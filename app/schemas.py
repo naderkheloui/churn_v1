@@ -1,7 +1,6 @@
 # app/schemas.py
 
 from pydantic import BaseModel
-from typing import Optional
 
 class ChurnInput(BaseModel):
     Geolocalisation__Latitude__s: float
