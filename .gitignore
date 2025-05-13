@@ -1,16 +1,19 @@
-# Ignorer les fichiers de l'environnement virtuel
+# Environnement virtuel
 .env/
 venv/
-env/
+__pycache__/
 
-# Ignorer les fichiers Python compilés
-*.pyc
-*.pyo
-
-# Ignorer les fichiers d'IDE
+# PyCharm
 .idea/
-*.iml
 
-# Ignorer les fichiers système
-Thumbs.db
+# Fichiers compilés Python
+*.pyc
+
+# Logs
+*.log
+
+# Données temporaires
 .DS_Store
+
+# Dépendances système
+*.egg-info/
