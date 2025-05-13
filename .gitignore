@@ -1,0 +1,16 @@
+# Ignorer les fichiers de l'environnement virtuel
+.env/
+venv/
+env/
+
+# Ignorer les fichiers Python compilés
+*.pyc
+*.pyo
+
+# Ignorer les fichiers d'IDE
+.idea/
+*.iml
+
+# Ignorer les fichiers système
+Thumbs.db
+.DS_Store
