@@ -34,15 +34,13 @@ jobs:
 
       # 3. Étape de construction de l'image Docker à partir du Dockerfile
       - name: Build Docker image
-        run: |
-          docker build -t nadiroun/churn-app:latest .
+        run: docker build -t nadiroun/churn_v1_app:latest .
         # `docker build` va créer une image Docker à partir du Dockerfile situé à la racine de ton projet.
         # Le `-t nadiroun/churn-app:latest` donne un nom à l'image (ici "nadiroun/churn-app") et une étiquette "latest".
         # Le `.` à la fin signifie que Docker va utiliser le contexte de construction dans le répertoire actuel.
 
       # 4. Étape de push de l'image vers DockerHub
       - name: Push Docker image to DockerHub
-        run: |
-          docker push nadiroun/churn_v1_app:latest
+        run: docker push nadiroun/churn_v1_app:latest
         # Cette étape pousse l'imaae  Docker vers ton repository DockerHub (ici "nadiroun/churn-app").
         # Cela rend l'image accessible depuis DockerHub, prête à être utilisée dans un déploiement.
