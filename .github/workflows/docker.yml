@@ -44,5 +44,5 @@ jobs:
       - name: Push Docker image to DockerHub
         run: |
           docker push nadiroun/churn_v1_app:latest
-        # Cette étape pousse l'image Docker vers ton repository DockerHub (ici "nadiroun/churn-app").
+        # Cette étape pousse l'imaae  Docker vers ton repository DockerHub (ici "nadiroun/churn-app").
         # Cela rend l'image accessible depuis DockerHub, prête à être utilisée dans un déploiement.
