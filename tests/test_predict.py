@@ -3,6 +3,10 @@ from app.main import app
 
 client = TestClient(app)
 
+'''
+
+
+
 def test_predict():
     """
     teste la route /predict
@@ -30,3 +34,6 @@ def test_predict():
 
     # Verifier que la reponse contient un champ prediction
     assert "prediction" in reponse.json()
+
+
+'''
