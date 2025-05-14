@@ -1,10 +1,7 @@
-#from fastapi.testclient import TestClient
-#from app.main import app
+from fastapi.testclient import TestClient
+from app.main import app
 
-#client = TestClient(app)
-
-'''
-
+client = TestClient(app)
 
 
 def test_predict():
@@ -34,6 +31,3 @@ def test_predict():
 
     # Verifier que la reponse contient un champ prediction
     assert "prediction" in reponse.json()
-
-
-'''
